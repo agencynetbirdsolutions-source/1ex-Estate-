@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,6 @@ a{color:inherit}
 .bg i:nth-child(1){width:360px;height:360px;background:var(--b1);top:-80px;right:-80px}
 .bg i:nth-child(2){width:300px;height:300px;background:#7a3cff;bottom:5%;left:-90px;animation-duration:25s}
 @keyframes blob{to{transform:translate(60px,60px) scale(1.25)}}
-
 /* banner */
 .banner{padding:16px;text-align:center}
 .banner a{display:inline-block;width:100%;max-width:440px;border-radius:22px;overflow:hidden;position:relative;border:1px solid rgba(90,169,255,.6);box-shadow:0 0 45px rgba(30,123,255,.4),0 20px 50px #000a;animation:fl 5s ease-in-out infinite}
@@ -30,7 +28,6 @@ a{color:inherit}
 .banner a::after{content:"";position:absolute;top:0;left:-120%;width:55%;height:100%;background:linear-gradient(100deg,transparent,#fff4,transparent);transform:skewX(-20deg);animation:sh 4.5s ease-in-out infinite}
 @keyframes fl{50%{transform:translateY(-10px)}}
 @keyframes sh{55%,100%{left:170%}}
-
 /* nav */
 nav{position:sticky;top:0;z-index:100;background:#050b1cd9;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nv{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;max-width:1100px;margin:auto}
@@ -50,14 +47,12 @@ nav{position:sticky;top:0;z-index:100;background:#050b1cd9;backdrop-filter:blur(
 @media(max-width:820px){.nv ul{display:none}}
 .rp{position:absolute;border-radius:50%;background:#fff5;transform:scale(0);animation:rp .6s linear;pointer-events:none}
 @keyframes rp{to{transform:scale(4);opacity:0}}
-
 /* ticker */
 .tk{overflow:hidden;background:#07112b;border-bottom:1px solid var(--line);padding:10px 0}
 .tk div{display:flex;gap:48px;width:max-content;white-space:nowrap;animation:tk 28s linear infinite}
 .tk span{color:var(--b2);font-weight:600;letter-spacing:1px;font-size:.88rem}
 .tk i{margin-right:8px;color:var(--gold)}
 @keyframes tk{to{transform:translateX(-50%)}}
-
 /* hero */
 .hero{padding:60px 0 20px;text-align:center}
 .hero h1{font-family:'Space Grotesk';font-size:clamp(2.1rem,6vw,3.7rem);line-height:1.1;background:linear-gradient(120deg,#fff,var(--b2),var(--gold),#fff);background-size:250% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:ts 7s linear infinite}
@@ -69,7 +64,6 @@ nav{position:sticky;top:0;z-index:100;background:#050b1cd9;backdrop-filter:blur(
 .skyline b{width:26px;border-radius:4px 4px 0 0;background:linear-gradient(180deg,var(--b2),#0b2a66);height:0;animation:up 1.6s cubic-bezier(.2,.8,.2,1) forwards,gw 3s ease-in-out infinite alternate}
 @keyframes up{to{height:var(--h)}}
 @keyframes gw{to{filter:brightness(1.5)}}
-
 /* sections */
 section{padding:70px 0}
 .alt{background:#ffffff05}
@@ -83,14 +77,12 @@ section{padding:70px 0}
 .c h3{font-family:'Space Grotesk';margin-bottom:6px}
 .c p{color:var(--muted);font-size:.94rem}
 .c a{display:inline-block;margin-top:12px;color:var(--gold);text-decoration:none;font-weight:600;font-size:.9rem}
-
 /* steps */
 .st{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
 .st div{text-align:center}
 .n{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 1.4rem 'Space Grotesk';background:linear-gradient(135deg,var(--b2),var(--b1));box-shadow:0 0 26px #1e7bff77;animation:fl 4s ease-in-out infinite}
 .st div:nth-child(2) .n{animation-delay:.5s}.st div:nth-child(3) .n{animation-delay:1s}
 .st p{color:var(--muted);font-size:.93rem}
-
 /* faq */
 .fq{max-width:760px;margin:auto}
 .q{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
@@ -99,7 +91,6 @@ section{padding:70px 0}
 .q p{max-height:0;overflow:hidden;padding:0 20px;color:var(--muted);transition:max-height .4s,padding .4s}
 .q.o p{max-height:200px;padding:0 20px 18px}
 .q.o button i{transform:rotate(45deg)}
-
 /* cta / footer */
 .cta{text-align:center;border:1px solid var(--b2);border-radius:26px;padding:54px 22px;background:linear-gradient(135deg,#0b2260,#060d22);box-shadow:0 0 60px #1e7bff26}
 .cta h2{font:700 clamp(1.6rem,4vw,2.3rem) 'Space Grotesk';margin-bottom:8px}
@@ -107,15 +98,13 @@ section{padding:70px 0}
 footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);font-size:.88rem}
 .wa{position:fixed;right:18px;bottom:18px;z-index:150;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:2rem;text-decoration:none;animation:rg 2.2s infinite}
 @keyframes rg{0%{box-shadow:0 0 0 0 #25d366aa}70%,100%{box-shadow:0 0 0 22px #25d36600}}
-
 .rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}
 .rv.on{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.skyline b{height:var(--h)}}
-
 /* legal pages */
 .legal-page{display:none;padding:70px 0}
 .legal-page:target{display:block}
-#home:target~*{}
+#home:target\~*{}
 .legal-box{max-width:900px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px 28px;box-shadow:0 18px 50px #0005}
 .legal-box h1{font:700 clamp(2rem,5vw,3rem) 'Space Grotesk';margin-bottom:10px}
 .legal-box .updated{color:var(--muted);font-size:.9rem;margin-bottom:28px}
@@ -131,270 +120,221 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
 <body>
 <div id="bar"></div><div id="glow"></div>
 <div class="bg"><i></i><i></i></div>
-
 <div class="banner">
-  <a href="https://wa.me/919286353220?text=Need%20More%20Details" target="_blank" rel="noopener">
-    <img src="1ex.png" alt="1EX Estate – Trusted, Premium, Best Deals. Get message on WhatsApp" width="941" height="1672">
-  </a>
+&#x20;&#x20;<a href="https://wa.me/919286353220?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener">
+&#x20;&#x20;&#x20;&#x20;<img src="https://1ex-estate.vercel.app/1ex.png" alt="1EX Estate – Trusted, Premium, Best Deals. Get message on WhatsApp" width="941" height="1672">
+&#x20;&#x20;</a>
 </div>
-
 <nav><div class="nv">
-  <a class="logo" href="#home">1EX<b>ESTATE</b></a>
-  <ul>
-    <li><a href="#properties">Properties</a></li>
-    <li><a href="#why">Why Us</a></li>
-    <li><a href="#process">How It Works</a></li>
-    <li><a href="#faq">FAQs</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a class="btn b-blue sm" href="https://wa.me/919286353220?text=Need%20More%20Details" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+&#x20;&#x20;<a class="logo" href="https://1ex-estate.vercel.app/#home">1EX<b>ESTATE</b></a>
+&#x20;&#x20;<ul>
+&#x20;&#x20;&#x20;&#x20;<li><a href="https://1ex-estate.vercel.app/#properties">Properties</a></li>
+&#x20;&#x20;&#x20;&#x20;<li><a href="https://1ex-estate.vercel.app/#why">Why Us</a></li>
+&#x20;&#x20;&#x20;&#x20;<li><a href="https://1ex-estate.vercel.app/#process">How It Works</a></li>
+&#x20;&#x20;&#x20;&#x20;<li><a href="https://1ex-estate.vercel.app/#faq">FAQs</a></li>
+&#x20;&#x20;&#x20;&#x20;<li><a href="https://1ex-estate.vercel.app/#contact">Contact</a></li>
+&#x20;&#x20;</ul>
+&#x20;&#x20;<a class="btn b-blue sm" href="https://wa.me/919286353220?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </div></nav>
-
 <div class="tk"><div>
-  <span><i class="fas fa-building"></i>FLATS &amp; APARTMENTS</span><span><i class="fas fa-house"></i>VILLAS</span><span><i class="fas fa-map-location-dot"></i>PLOTS</span><span><i class="fas fa-shop"></i>COMMERCIAL</span><span><i class="fas fa-key"></i>BEST DEALS</span>
-  <span><i class="fas fa-building"></i>FLATS &amp; APARTMENTS</span><span><i class="fas fa-house"></i>VILLAS</span><span><i class="fas fa-map-location-dot"></i>PLOTS</span><span><i class="fas fa-shop"></i>COMMERCIAL</span><span><i class="fas fa-key"></i>BEST DEALS</span>
+&#x20;&#x20;<span><i class="fas fa-building"></i>FLATS &amp; APARTMENTS</span><span><i class="fas fa-house"></i>VILLAS</span><span><i class="fas fa-map-location-dot"></i>PLOTS</span><span><i class="fas fa-shop"></i>COMMERCIAL</span><span><i class="fas fa-key"></i>BEST DEALS</span>
+&#x20;&#x20;<span><i class="fas fa-building"></i>FLATS &amp; APARTMENTS</span><span><i class="fas fa-house"></i>VILLAS</span><span><i class="fas fa-map-location-dot"></i>PLOTS</span><span><i class="fas fa-shop"></i>COMMERCIAL</span><span><i class="fas fa-key"></i>BEST DEALS</span>
 </div></div>
-
 <header class="hero" id="home"><div class="wrap">
-  <h1 class="rv">Find Your Dream<br><span class="typed" id="typed"></span></h1>
-  <p class="rv">1EX Estate is a trusted, premium real estate service. Tell us what you need and we will share the best available deals with you on WhatsApp.</p>
-  <div class="row rv">
-    <a class="btn b-blue" href="https://wa.me/919286353220?text=Need%20More%20Details" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Get Details on WhatsApp</a>
-    <a class="btn b-out" href="#properties">View Property Types <i class="fas fa-arrow-down"></i></a>
-  </div>
-  <div class="skyline" id="sky"></div>
+&#x20;&#x20;<h1 class="rv">Find Your Dream<span class="typed" id="typed"></span></h1>
+&#x20;&#x20;<p class="rv">1EX Estate is a trusted, premium real estate service. Tell us what you need and we will share the best available deals with you on WhatsApp.</p>
+&#x20;&#x20;<div class="row rv">
+&#x20;&#x20;&#x20;&#x20;<a class="btn b-blue" href="https://wa.me/919286353220?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Get Details on WhatsApp</a>
+&#x20;&#x20;&#x20;&#x20;<a class="btn b-out" href="https://1ex-estate.vercel.app/#properties">View Property Types <i class="fas fa-arrow-down"></i></a>
+&#x20;&#x20;</div>
+&#x20;&#x20;<div class="skyline" id="sky"></div>
 </div></header>
-
 <section id="properties"><div class="wrap">
-  <h2 class="t rv">Property <span>Types</span></h2>
-  <p class="s rv">Whatever you are looking for, message us and we will help you find it.</p>
-  <div class="g">
-    <div class="c tilt rv"><i class="fas fa-building"></i><h3>Flats &amp; Apartments</h3><p>Modern homes for families, first-time buyers and investors.</p><a href="https://wa.me/15554703730?text=Need%20More%20Details" target="_blank" rel="noopener">Ask for details →</a></div>
-    <div class="c tilt rv"><i class="fas fa-house-chimney"></i><h3>Villas &amp; Houses</h3><p>Spacious, premium living with comfort and privacy.</p><a href="https://wa.me/15554703730?text=Need%20More%20Details" target="_blank" rel="noopener">Ask for details →</a></div>
-    <div class="c tilt rv"><i class="fas fa-map-location-dot"></i><h3>Plots &amp; Land</h3><p>Residential and investment plots for building your future.</p><a href="https://wa.me/15554703730?text=Need%20More%20Details" target="_blank" rel="noopener">Ask for details →</a></div>
-    <div class="c tilt rv"><i class="fas fa-shop"></i><h3>Commercial</h3><p>Shops, offices and commercial spaces for your business.</p><a href="https://wa.me/15554703730?text=Need%20More%20Details" target="_blank" rel="noopener">Ask for details →</a></div>
-  </div>
+&#x20;&#x20;<h2 class="t rv">Property <span>Types</span></h2>
+&#x20;&#x20;<p class="s rv">Whatever you are looking for, message us and we will help you find it.</p>
+&#x20;&#x20;<div class="g">
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fas fa-building"></i><h3>Flats &amp; Apartments</h3><p>Modern homes for families, first-time buyers and investors.</p><a href="https://wa.me/15554703730?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener">Ask for details →</a></div>
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fas fa-house-chimney"></i><h3>Villas &amp; Houses</h3><p>Spacious, premium living with comfort and privacy.</p><a href="https://wa.me/15554703730?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener">Ask for details →</a></div>
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fas fa-map-location-dot"></i><h3>Plots &amp; Land</h3><p>Residential and investment plots for building your future.</p><a href="https://wa.me/15554703730?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener">Ask for details →</a></div>
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fas fa-shop"></i><h3>Commercial</h3><p>Shops, offices and commercial spaces for your business.</p><a href="https://wa.me/15554703730?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener">Ask for details →</a></div>
+&#x20;&#x20;</div>
 </div></section>
-
 <section class="alt" id="why"><div class="wrap">
-  <h2 class="t rv">Why Choose <span>1EX Estate</span></h2>
-  <p class="s rv">Trusted. Premium. Best Deals.</p>
-  <div class="g">
-    <div class="c tilt rv"><i class="fas fa-shield-halved"></i><h3>Trusted</h3><p>Honest guidance and clear communication at every step.</p></div>
-    <div class="c tilt rv"><i class="fas fa-gem"></i><h3>Premium</h3><p>A premium experience, from first message to final deal.</p></div>
-    <div class="c tilt rv"><i class="fas fa-chart-line"></i><h3>Best Deals</h3><p>We help you compare options and find value for your budget.</p></div>
-    <div class="c tilt rv"><i class="fab fa-whatsapp"></i><h3>Quick Response</h3><p>Message us on WhatsApp and get details without any hassle.</p></div>
-  </div>
+&#x20;&#x20;<h2 class="t rv">Why Choose <span>1EX Estate</span></h2>
+&#x20;&#x20;<p class="s rv">Trusted. Premium. Best Deals.</p>
+&#x20;&#x20;<div class="g">
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fas fa-shield-halved"></i><h3>Trusted</h3><p>Honest guidance and clear communication at every step.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fas fa-gem"></i><h3>Premium</h3><p>A premium experience, from first message to final deal.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fas fa-chart-line"></i><h3>Best Deals</h3><p>We help you compare options and find value for your budget.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div class="c tilt rv"><i class="fab fa-whatsapp"></i><h3>Quick Response</h3><p>Message us on WhatsApp and get details without any hassle.</p></div>
+&#x20;&#x20;</div>
 </div></section>
-
 <section id="process"><div class="wrap">
-  <h2 class="t rv">How It <span>Works</span></h2>
-  <p class="s rv">Three simple steps.</p>
-  <div class="st rv">
-    <div><div class="n">1</div><h3>Message Us</h3><p>Tap the WhatsApp button and tell us what you are looking for.</p></div>
-    <div><div class="n">2</div><h3>Get Options</h3><p>We share suitable properties and details as per your need.</p></div>
-    <div><div class="n">3</div><h3>Choose &amp; Close</h3><p>Pick the one you like and move ahead with our support.</p></div>
-  </div>
+&#x20;&#x20;<h2 class="t rv">How It <span>Works</span></h2>
+&#x20;&#x20;<p class="s rv">Three simple steps.</p>
+&#x20;&#x20;<div class="st rv">
+&#x20;&#x20;&#x20;&#x20;<div><div class="n">1</div><h3>Message Us</h3><p>Tap the WhatsApp button and tell us what you are looking for.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div><div class="n">2</div><h3>Get Options</h3><p>We share suitable properties and details as per your need.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div><div class="n">3</div><h3>Choose &amp; Close</h3><p>Pick the one you like and move ahead with our support.</p></div>
+&#x20;&#x20;</div>
 </div></section>
-
 <section class="alt" id="faq"><div class="wrap">
-  <h2 class="t rv">Frequently Asked <span>Questions</span></h2>
-  <p class="s rv">Quick answers before you message us.</p>
-  <div class="fq rv">
-    <div class="q"><button>How can I get property details?<i class="fas fa-plus"></i></button><p>Click any WhatsApp button on this page and send us a message. We will reply with the details.</p></div>
-    <div class="q"><button>What types of properties do you offer?<i class="fas fa-plus"></i></button><p>Flats, villas, plots and commercial properties. Tell us your requirement and budget and we will guide you.</p></div>
-    <div class="q"><button>Can I share my budget and preferred area?<i class="fas fa-plus"></i></button><p>Yes. Sharing your budget, preferred area and property type helps us suggest the right options faster.</p></div>
-    <div class="q"><button>Is there any charge to enquire?<i class="fas fa-plus"></i></button><p>Sending an enquiry on WhatsApp is free. Any terms for a deal are discussed clearly before you decide.</p></div>
-    <div class="q"><button>How do I contact 1EX Estate?<i class="fas fa-plus"></i></button><p>The fastest way is WhatsApp. Use the button on this page to start the chat.</p></div>
-  </div>
+&#x20;&#x20;<h2 class="t rv">Frequently Asked <span>Questions</span></h2>
+&#x20;&#x20;<p class="s rv">Quick answers before you message us.</p>
+&#x20;&#x20;<div class="fq rv">
+&#x20;&#x20;&#x20;&#x20;<div class="q"><button>How can I get property details?<i class="fas fa-plus"></i></button><p>Click any WhatsApp button on this page and send us a message. We will reply with the details.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div class="q"><button>What types of properties do you offer?<i class="fas fa-plus"></i></button><p>Flats, villas, plots and commercial properties. Tell us your requirement and budget and we will guide you.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div class="q"><button>Can I share my budget and preferred area?<i class="fas fa-plus"></i></button><p>Yes. Sharing your budget, preferred area and property type helps us suggest the right options faster.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div class="q"><button>Is there any charge to enquire?<i class="fas fa-plus"></i></button><p>Sending an enquiry on WhatsApp is free. Any terms for a deal are discussed clearly before you decide.</p></div>
+&#x20;&#x20;&#x20;&#x20;<div class="q"><button>How do I contact 1EX Estate?<i class="fas fa-plus"></i></button><p>The fastest way is WhatsApp. Use the button on this page to start the chat.</p></div>
+&#x20;&#x20;</div>
 </div></section>
-
 <section id="contact"><div class="wrap">
-  <div class="cta rv">
-    <h2>Ready to Find Your Property?</h2>
-    <p>Get message on WhatsApp and receive details today.</p>
-    <a class="btn b-blue" href="https://wa.me/919286353220?text=Need%20More%20Details" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Get Message on WhatsApp</a>
-  </div>
+&#x20;&#x20;<div class="cta rv">
+&#x20;&#x20;&#x20;&#x20;<h2>Ready to Find Your Property?</h2>
+&#x20;&#x20;&#x20;&#x20;<p>Get message on WhatsApp and receive details today.</p>
+&#x20;&#x20;&#x20;&#x20;<a class="btn b-blue" href="https://wa.me/919286353220?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Get Message on WhatsApp</a>
+&#x20;&#x20;</div>
 </div></section>
-
-
 <section class="legal-page" id="privacy">
-  <div class="wrap">
-    <div class="legal-box">
-      <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: September 29, 2026</p>
-
-      <p>1EX Estate respects your privacy. This Privacy Policy explains how information may be handled when you visit this website, contact us through WhatsApp, or use our property enquiry services.</p>
-
-      <h2>1. Information We May Receive</h2>
-      <p>This website does not currently use a website enquiry form. If you contact 1EX Estate through WhatsApp, you may choose to provide information such as your name, phone number, preferred property type, preferred area, budget, or other details needed to respond to your enquiry.</p>
-      <p>We may also receive basic technical information that is automatically sent by your browser when you access a website, such as device, browser, IP address, or similar technical information, depending on the services used on the site and your browser settings.</p>
-
-      <h2>2. How We Use Information</h2>
-      <ul>
-        <li>To respond to property enquiries and requests for information.</li>
-        <li>To understand the property requirements you voluntarily share with us.</li>
-        <li>To communicate with you about an enquiry or service you requested.</li>
-        <li>To maintain website security and improve website performance.</li>
-        <li>To meet applicable legal or regulatory requirements where required.</li>
-      </ul>
-
-      <h2>3. WhatsApp and Third-Party Services</h2>
-      <p>Our website contains links that open WhatsApp. When you use those links, you leave this website and interact with WhatsApp under WhatsApp's own terms and privacy practices. We do not control how WhatsApp processes information.</p>
-      <p>The current website also loads fonts from Google Fonts and icons from a third-party CDN. These services may receive technical information associated with a browser request. Their own terms and privacy policies apply to their processing.</p>
-
-      <h2>4. Google Services and Advertising</h2>
-      <p>At the time this policy was prepared, the supplied website code does not contain Google Ads or Google Analytics tracking code. If Google Ads, Google Analytics, remarketing, conversion tracking, or other Google measurement or advertising products are added later, this Privacy Policy should be updated to describe the relevant data collection, cookies, sharing, and user choices before those services are used where disclosure or consent is required.</p>
-      <p>Google requires publishers and advertisers using its products to provide appropriate privacy disclosures about data collection, sharing, usage, and technologies such as cookies, web beacons, IP addresses, or other identifiers.</p>
-
-      <h2>5. Cookies and Similar Technologies</h2>
-      <p>The current website does not intentionally set a first-party tracking cookie through its own JavaScript. Third-party services loaded by the page may use their own technologies according to their policies. Your browser may also store information as part of normal web operation.</p>
-
-      <h2>6. Sharing of Information</h2>
-      <p>We do not sell personal information collected directly from your enquiry to third parties. Information may be shared with service providers when reasonably necessary to operate the website or respond to your request, or where disclosure is required by law.</p>
-
-      <h2>7. Data Security</h2>
-      <p>We take reasonable steps to protect information handled by us. However, no internet transmission or electronic storage system can be guaranteed to be completely secure.</p>
-      <p>If you are asked to submit sensitive information or payment details, use a secure HTTPS connection and provide only information that is necessary for the requested service.</p>
-
-      <h2>8. Data Retention</h2>
-      <p>Information may be retained for as long as reasonably necessary to respond to enquiries, provide requested services, maintain business records, resolve disputes, prevent misuse, or meet legal obligations.</p>
-
-      <h2>9. Your Choices</h2>
-      <p>You can choose not to provide optional information. You can also stop contacting us through WhatsApp at any time. If you have a privacy request relating to information you previously shared with 1EX Estate, contact us using the WhatsApp number provided on this website.</p>
-
-      <h2>10. Children</h2>
-      <p>This website is intended for a general audience and is not designed to knowingly collect personal information from children.</p>
-
-      <h2>11. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy when our website, services, technology, or legal requirements change. The latest version will be published on this page with an updated date.</p>
-
-      <h2>12. Contact</h2>
-      <p>For privacy questions or requests, contact 1EX Estate through the WhatsApp contact provided on this website.</p>
-
-      <a class="btn b-out legal-back" href="#home">← Back to Home</a>
-    </div>
-  </div>
+&#x20;&#x20;<div class="wrap">
+&#x20;&#x20;&#x20;&#x20;<div class="legal-box">
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h1>Privacy Policy</h1>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p class="updated">Last updated: September 29, 2026</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>1EX Estate respects your privacy. This Privacy Policy explains how information may be handled when you visit this website, contact us through WhatsApp, or use our property enquiry services.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>1. Information We May Receive</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>This website does not currently use a website enquiry form. If you contact 1EX Estate through WhatsApp, you may choose to provide information such as your name, phone number, preferred property type, preferred area, budget, or other details needed to respond to your enquiry.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>We may also receive basic technical information that is automatically sent by your browser when you access a website, such as device, browser, IP address, or similar technical information, depending on the services used on the site and your browser settings.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>2. How We Use Information</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<ul>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>To respond to property enquiries and requests for information.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>To understand the property requirements you voluntarily share with us.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>To communicate with you about an enquiry or service you requested.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>To maintain website security and improve website performance.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>To meet applicable legal or regulatory requirements where required.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;</ul>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>3. WhatsApp and Third-Party Services</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>Our website contains links that open WhatsApp. When you use those links, you leave this website and interact with WhatsApp under WhatsApp's own terms and privacy practices. We do not control how WhatsApp processes information.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>The current website also loads fonts from Google Fonts and icons from a third-party CDN. These services may receive technical information associated with a browser request. Their own terms and privacy policies apply to their processing.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>4. Google Services and Advertising</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>At the time this policy was prepared, the supplied website code does not contain Google Ads or Google Analytics tracking code. If Google Ads, Google Analytics, remarketing, conversion tracking, or other Google measurement or advertising products are added later, this Privacy Policy should be updated to describe the relevant data collection, cookies, sharing, and user choices before those services are used where disclosure or consent is required.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>Google requires publishers and advertisers using its products to provide appropriate privacy disclosures about data collection, sharing, usage, and technologies such as cookies, web beacons, IP addresses, or other identifiers.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>5. Cookies and Similar Technologies</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>The current website does not intentionally set a first-party tracking cookie through its own JavaScript. Third-party services loaded by the page may use their own technologies according to their policies. Your browser may also store information as part of normal web operation.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>6. Sharing of Information</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>We do not sell personal information collected directly from your enquiry to third parties. Information may be shared with service providers when reasonably necessary to operate the website or respond to your request, or where disclosure is required by law.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>7. Data Security</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>We take reasonable steps to protect information handled by us. However, no internet transmission or electronic storage system can be guaranteed to be completely secure.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>If you are asked to submit sensitive information or payment details, use a secure HTTPS connection and provide only information that is necessary for the requested service.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>8. Data Retention</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>Information may be retained for as long as reasonably necessary to respond to enquiries, provide requested services, maintain business records, resolve disputes, prevent misuse, or meet legal obligations.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>9. Your Choices</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>You can choose not to provide optional information. You can also stop contacting us through WhatsApp at any time. If you have a privacy request relating to information you previously shared with 1EX Estate, contact us using the WhatsApp number provided on this website.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>10. Children</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>This website is intended for a general audience and is not designed to knowingly collect personal information from children.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>11. Changes to This Policy</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>We may update this Privacy Policy when our website, services, technology, or legal requirements change. The latest version will be published on this page with an updated date.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>12. Contact</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>For privacy questions or requests, contact 1EX Estate through the WhatsApp contact provided on this website.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<a class="btn b-out legal-back" href="https://1ex-estate.vercel.app/#home">← Back to Home</a>
+&#x20;&#x20;&#x20;&#x20;</div>
+&#x20;&#x20;</div>
 </section>
-
 <section class="legal-page" id="terms">
-  <div class="wrap">
-    <div class="legal-box">
-      <h1>Terms &amp; Conditions</h1>
-      <p class="updated">Last updated: September 29, 2026</p>
-
-      <p>By using the 1EX Estate website, you agree to these Terms &amp; Conditions. If you do not agree with them, please do not use the website.</p>
-
-      <h2>1. Website Purpose</h2>
-      <p>This website provides information about property types and allows visitors to contact 1EX Estate for property-related enquiries. The website is an enquiry and information channel and does not by itself create a property sale, purchase, lease, brokerage, or other binding transaction.</p>
-
-      <h2>2. Property Information</h2>
-      <p>Property availability, prices, specifications, locations, offers, and other details may change. Information shared through this website or WhatsApp should be confirmed before making a financial or contractual decision.</p>
-
-      <h2>3. No Guarantee of Availability</h2>
-      <p>Submitting an enquiry does not reserve a property or guarantee that a particular property will remain available. Any reservation, purchase, lease, brokerage arrangement, or other transaction is subject to separate terms agreed by the relevant parties.</p>
-
-      <h2>4. User Information</h2>
-      <p>You agree to provide information that is accurate to the best of your knowledge when making an enquiry. Do not submit information that you do not have the right to share.</p>
-
-      <h2>5. WhatsApp Communication</h2>
-      <p>WhatsApp links on this website open an external service. Your use of WhatsApp is subject to WhatsApp's own terms and policies. 1EX Estate is not responsible for outages, changes, or processing performed by the external platform.</p>
-
-      <h2>6. Website Content</h2>
-      <p>Website text, graphics, layout, branding, and other content are provided for business and informational purposes. You may not copy, reproduce, modify, or redistribute website content for commercial use without appropriate permission.</p>
-
-      <h2>7. Third-Party Links and Services</h2>
-      <p>This website may use or link to third-party services. Those services operate under their own terms and privacy policies. 1EX Estate does not control the policies or availability of external services.</p>
-
-      <h2>8. Prohibited Use</h2>
-      <ul>
-        <li>Do not use the website for unlawful or fraudulent activity.</li>
-        <li>Do not attempt to interfere with website security or operation.</li>
-        <li>Do not submit false, misleading, or unauthorized information.</li>
-        <li>Do not use automated methods to abuse or overload the website.</li>
-      </ul>
-
-      <h2>9. Limitation of Liability</h2>
-      <p>To the extent permitted by applicable law, 1EX Estate is not responsible for losses caused by reliance on information that has changed, third-party service interruptions, or events outside reasonable control. Final property and transaction terms should always be verified with the relevant parties before commitment.</p>
-
-      <h2>10. Changes to These Terms</h2>
-      <p>These Terms &amp; Conditions may be updated when the website or services change. The latest version will be published on this page with an updated date.</p>
-
-      <h2>11. Contact</h2>
-      <p>For questions about these Terms &amp; Conditions, contact 1EX Estate through the WhatsApp contact provided on this website.</p>
-
-      <a class="btn b-out legal-back" href="#home">← Back to Home</a>
-    </div>
-  </div>
+&#x20;&#x20;<div class="wrap">
+&#x20;&#x20;&#x20;&#x20;<div class="legal-box">
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h1>Terms &amp; Conditions</h1>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p class="updated">Last updated: September 29, 2026</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>By using the 1EX Estate website, you agree to these Terms &amp; Conditions. If you do not agree with them, please do not use the website.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>1. Website Purpose</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>This website provides information about property types and allows visitors to contact 1EX Estate for property-related enquiries. The website is an enquiry and information channel and does not by itself create a property sale, purchase, lease, brokerage, or other binding transaction.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>2. Property Information</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>Property availability, prices, specifications, locations, offers, and other details may change. Information shared through this website or WhatsApp should be confirmed before making a financial or contractual decision.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>3. No Guarantee of Availability</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>Submitting an enquiry does not reserve a property or guarantee that a particular property will remain available. Any reservation, purchase, lease, brokerage arrangement, or other transaction is subject to separate terms agreed by the relevant parties.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>4. User Information</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>You agree to provide information that is accurate to the best of your knowledge when making an enquiry. Do not submit information that you do not have the right to share.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>5. WhatsApp Communication</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>WhatsApp links on this website open an external service. Your use of WhatsApp is subject to WhatsApp's own terms and policies. 1EX Estate is not responsible for outages, changes, or processing performed by the external platform.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>6. Website Content</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>Website text, graphics, layout, branding, and other content are provided for business and informational purposes. You may not copy, reproduce, modify, or redistribute website content for commercial use without appropriate permission.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>7. Third-Party Links and Services</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>This website may use or link to third-party services. Those services operate under their own terms and privacy policies. 1EX Estate does not control the policies or availability of external services.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>8. Prohibited Use</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<ul>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>Do not use the website for unlawful or fraudulent activity.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>Do not attempt to interfere with website security or operation.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>Do not submit false, misleading, or unauthorized information.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<li>Do not use automated methods to abuse or overload the website.</li>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;</ul>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>9. Limitation of Liability</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>To the extent permitted by applicable law, 1EX Estate is not responsible for losses caused by reliance on information that has changed, third-party service interruptions, or events outside reasonable control. Final property and transaction terms should always be verified with the relevant parties before commitment.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>10. Changes to These Terms</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>These Terms &amp; Conditions may be updated when the website or services change. The latest version will be published on this page with an updated date.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<h2>11. Contact</h2>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<p>For questions about these Terms &amp; Conditions, contact 1EX Estate through the WhatsApp contact provided on this website.</p>
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;<a class="btn b-out legal-back" href="https://1ex-estate.vercel.app/#home">← Back to Home</a>
+&#x20;&#x20;&#x20;&#x20;</div>
+&#x20;&#x20;</div>
 </section>
-
 <footer><div class="wrap">
-  © 2026 1EX Estate. All Rights Reserved.
-  <span style="display:block;margin-top:8px">
-    <a href="#privacy" style="color:var(--b2);text-decoration:none;margin:0 8px">Privacy Policy</a>
-    <a href="#terms" style="color:var(--b2);text-decoration:none;margin:0 8px">Terms &amp; Conditions</a>
-  </span>
+&#x20;&#x20;© 2026 1EX Estate. All Rights Reserved.
+&#x20;&#x20;<span style="display:block;margin-top:8px">
+&#x20;&#x20;&#x20;&#x20;<a href="https://1ex-estate.vercel.app/#privacy" style="color:var(--b2);text-decoration:none;margin:0 8px">Privacy Policy</a>
+&#x20;&#x20;&#x20;&#x20;<a href="https://1ex-estate.vercel.app/#terms" style="color:var(--b2);text-decoration:none;margin:0 8px">Terms &amp; Conditions</a>
+&#x20;&#x20;</span>
 </div></footer>
-
-<a class="wa" href="https://wa.me/919286353220?text=Need%20More%20Details" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-
+<a class="wa" href="https://wa.me/919286353220?text=need%20instant%F0%9F%86%94" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <script>
 // skyline bars
 var sky=document.getElementById('sky'),hs=[40,70,55,95,65,105,80,60,90,50,75,45];
 hs.forEach(function(h,i){var b=document.createElement('b');b.style.setProperty('--h',h+'px');b.style.animationDelay=(i*.1)+'s,'+(i*.25)+'s';sky.appendChild(b)});
-
 // typing effect
 var words=['Home','Villa','Plot','Investment'],wi=0,ci=0,del=false,el=document.getElementById('typed');
 (function tick(){var w=words[wi];el.textContent=w.slice(0,ci);
- if(!del&&ci<w.length){ci++;setTimeout(tick,120)}
- else if(!del){del=true;setTimeout(tick,1200)}
- else if(ci>0){ci--;setTimeout(tick,60)}
- else{del=false;wi=(wi+1)%words.length;setTimeout(tick,300)}})();
-
+&#x20;if(!del&&ci<w.length){ci++;setTimeout(tick,120)}
+&#x20;else if(!del){del=true;setTimeout(tick,1200)}
+&#x20;else if(ci>0){ci--;setTimeout(tick,60)}
+&#x20;else{del=false;wi=(wi+1)%words.length;setTimeout(tick,300)}})();
 // scroll reveal
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rv').forEach(function(x,i){x.style.transitionDelay=(i%4*.08)+'s';io.observe(x)});
-
 // progress bar + cursor glow
 addEventListener('scroll',function(){var h=document.documentElement;document.getElementById('bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'});
 var gl=document.getElementById('glow');
 addEventListener('pointermove',function(e){gl.style.left=e.clientX+'px';gl.style.top=e.clientY+'px'});
-
 // 3D tilt on cards
 document.querySelectorAll('.tilt').forEach(function(c){
- c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*10+'deg) rotateX('+(-y*10)+'deg) translateY(-6px)'});
- c.addEventListener('pointerleave',function(){c.style.transform=''});
+&#x20;c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*10+'deg) rotateX('+(-y*10)+'deg) translateY(-6px)'});
+&#x20;c.addEventListener('pointerleave',function(){c.style.transform=''});
 });
-
 // FAQ accordion
 document.querySelectorAll('.q button').forEach(function(b){b.addEventListener('click',function(){var q=b.parentNode,o=q.classList.contains('o');document.querySelectorAll('.q').forEach(function(x){x.classList.remove('o')});if(!o)q.classList.add('o')})});
-
 // button ripple
 document.querySelectorAll('.btn').forEach(function(b){b.addEventListener('click',function(e){var r=b.getBoundingClientRect(),s=document.createElement('span'),d=Math.max(r.width,r.height);s.className='rp';s.style.width=s.style.height=d+'px';s.style.left=(e.clientX-r.left-d/2)+'px';s.style.top=(e.clientY-r.top-d/2)+'px';b.appendChild(s);setTimeout(function(){s.remove()},600)})});
-
 // legal page routing
 (function(){
-  var legalIds=['privacy','terms'];
-  function routeLegal(){
-    var id=location.hash.replace('#','');
-    var show=legalIds.indexOf(id)>-1;
-    document.querySelectorAll('body > *').forEach(function(el){
-      if(el.id==='privacy'||el.id==='terms') return;
-      if(el.tagName==='SCRIPT') return;
-      if(show) el.style.display='none';
-      else el.style.display='';
-    });
-    legalIds.forEach(function(x){
-      var el=document.getElementById(x);
-      if(el) el.style.display=(id===x)?'block':'none';
-    });
-    document.title = id==='privacy' ? 'Privacy Policy – 1EX Estate' :
-                     id==='terms' ? 'Terms & Conditions – 1EX Estate' :
-                     '1EX Estate – Trusted Premium Real Estate | Best Deals';
-    window.scrollTo(0,0);
-  }
-  addEventListener('hashchange',routeLegal);
-  routeLegal();
+&#x20;&#x20;var legalIds=['privacy','terms'];
+&#x20;&#x20;function routeLegal(){
+&#x20;&#x20;&#x20;&#x20;var id=location.hash.replace('#','');
+&#x20;&#x20;&#x20;&#x20;var show=legalIds.indexOf(id)>-1;
+&#x20;&#x20;&#x20;&#x20;document.querySelectorAll('body > *').forEach(function(el){
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;if(el.id==='privacy'||el.id==='terms') return;
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;if(el.tagName==='SCRIPT') return;
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;if(show) el.style.display='none';
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;else el.style.display='';
+&#x20;&#x20;&#x20;&#x20;});
+&#x20;&#x20;&#x20;&#x20;legalIds.forEach(function(x){
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;var el=document.getElementById(x);
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;if(el) el.style.display=(id===x)?'block':'none';
+&#x20;&#x20;&#x20;&#x20;});
+&#x20;&#x20;&#x20;&#x20;document.title = id==='privacy' ? 'Privacy Policy – 1EX Estate' :
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;id==='terms' ? 'Terms & Conditions – 1EX Estate' :
+&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;'1EX Estate – Trusted Premium Real Estate | Best Deals';
+&#x20;&#x20;&#x20;&#x20;window.scrollTo(0,0);
+&#x20;&#x20;}
+&#x20;&#x20;addEventListener('hashchange',routeLegal);
+&#x20;&#x20;routeLegal();
 })();
 </script>
 </body>
